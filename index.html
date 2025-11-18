@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Singleton Design Pattern — Demo</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Singleton Pattern — JavaScript Demo</h1>
+    <p>
+      This example shows how a Singleton ensures only one instance is ever created.
+    </p>
+
+    <div class="controls">
+      <button id="createA">Create/Get Instance A</button>
+      <button id="createB">Create/Get Instance B</button>
+      <button id="compare">Compare Instances</button>
+    </div>
+
+    <div class="output" id="output">
+      <p><strong>Instance A:</strong> <span id="instA">—</span></p>
+      <p><strong>Instance B:</strong> <span id="instB">—</span></p>
+      <p id="result"></p>
+    </div>
+
+    <section class="explain">
+      <h2>What You Should See</h2>
+      <p>
+        Even if you click the buttons multiple times, both A and B represent the same Singleton instance.
+      </p>
+    </section>
+  </main>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
